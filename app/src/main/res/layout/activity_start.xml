@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="StartImg"
+            type="com.madhat.myzhihudaily.model.entity.StartImg"></variable>
+    </data>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.StartActivity"
+>
+
+    <ImageView android:id="@+id/Start_Image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:img="@{StartImg.img}"
+ />
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="知乎日报个人版"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+        <TextView android:id="@+id/Start_tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:text="@{StartImg.text}"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

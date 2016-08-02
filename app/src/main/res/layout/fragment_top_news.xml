@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<data >
+    <variable
+        name="NewsItem"
+        type="com.madhat.myzhihudaily.model.entity.NewsItem"></variable>
+</data>
+    <RelativeLayout
+        android:id="@+id/frag_top_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView android:id="@+id/headitem_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:background="@drawable/e"
+            app:loadTopImage="@{NewsItem.images.get(0)}"
+            />
+
+        <TextView android:id="@+id/headitem_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:padding="10dp"
+            android:paddingBottom="20dp"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            tools:text="哀吾生之须臾，恐美人之迟暮"
+            android:text="@{NewsItem.title}"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</layout>

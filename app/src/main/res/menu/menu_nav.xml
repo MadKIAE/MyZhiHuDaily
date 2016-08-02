@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+            android:id="@+id/menu_group">
+        <item
+            android:icon="@drawable/ic_home_white_48dp"
+            android:id="@+id/homepage"
+            android:title="首页" />
+    </group>
+</menu>
