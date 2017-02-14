@@ -1,3 +1,7 @@
+初学Android时写的练手作品，出于纪念意义没有删除。
+
+代码非常糟糕，请勿参考，重复一次，请勿参考！
+
 API由https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90 提供
 
 根据知乎日报官方客户端仿写。
